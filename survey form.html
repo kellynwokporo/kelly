@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Survey Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/zPiOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+body {
+  font-family: sans-serif;
+  background-color: #228B22;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.survey-form {
+  background-color: white;
+  padding: 20px;
+  max-width: 500px; 
+}
+
+.survey-form h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+
+
+.survey-form input[type="text"],
+.survey-form input[type="number"],
+.survey-form textarea {
+  width: calc(100%); 
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cebebe;
+  box-sizing: border-box; 
+}
+.survey-form button {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.radio-label{
+  display: inline!important;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="survey-form">
+  <h2>Survey Form <i class="poll"></i></h2>
+  <label id="name">Name: <i class="user"></i></label>
+  <input type="text" id="name" placeholder="Enter your name">
+  <label for="age">Age: <i class="calendar"></i></label>
+  <input type="number" id="age" placeholder="Enter your age">
+  <label>Favorite type of Sport:</label>
+<div>
+  <input type="radio" id="indoor" name="sport-type" value="indoor"> <label for="indoor" class="radio-label">Indoor</label><br>
+  <input type="radio" id="outdoor" name="sport-type" value="outdoor"> <label for="outdoor"class="radio-label" >Outdoor</label><br>
+  <input type="radio" id="both" name="sport-type" value="both"> <label for="both" class="radio-label">Both</label><br>
+</div>
+  <label for="watch">Favorite Sport to Watch: <i class="eye"></i></label>
+  <input type="text" id="watch" placeholder="Enter your favorite sport to watch">
+  <label for="play">Favorite Sport to Play: <i class="running"></i></label>
+  <input type="text" id="play" placeholder="Enter your favorite sport to play">
+  <label for="person">Favorite Sports-person: <i class="star"></i></label>
+  <input type="text" id="person" placeholder="Enter your favorite sports-person">
+  <label for="thoughts">Your Thoughts on Sports (optional): <i class="comment"></i></label>
+  <textarea id="thoughts" rows="5" placeholder="Share your thoughts..."></textarea>
+  <button type="submit">Submit</button>
+</div>
+</body>
+</html>

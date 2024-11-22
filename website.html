@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Website Header with Icons</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/zPiOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #161414;
+  color: rgb(240, 230, 230);
+  padding: 2px 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+  display: inline-block;
+  padding-left: 1%;
+}
+
+nav {
+  display:flex;
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(243, 231, 231);
+  padding: 5px 10px;
+  align-items: center;
+}
+
+.hero {
+  background-image: url('monday.jpg.jpg'); 
+  background-size: 100% 100vh;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  color: white;
+  position: absolute;
+  padding-bottom: 600px;
+}
+  .kelly {
+  color: red;
+  font-family: 'sans-serif';
+}
+p{
+  font-size: small;
+  padding-top: 550px;
+}
+ </style>
+</head>
+<body> 
+
+<header>
+  <div class="logo">LOGO</div>
+  <nav>
+    <ul>
+      <li><a href="#"><i class="home"></i>Home</a></li>
+      <li><a href="#"><i class="About"></i>About</a></li>
+      <li><a href="#"><i class="Menu"></i>Menu</a></li>
+      <li><a href="#"><i class="Order"></i>Order</a></li>
+      <li><a href="#"><i class="Contact"></i>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Home</h1>
+<p>made with 💖 by<span class="kelly"> learning Robo</span></p>
+</section>
+</body>
+</html>
